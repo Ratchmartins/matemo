@@ -3,7 +3,7 @@
 <body>
  
 <?php
-echo "My first PHP script! Woow! Moving on Well, Happy Learning!";
+echo "My 1st PHP script! Woow! Moving on Well, Happy Learning!";
 ?>
 
 </body>
