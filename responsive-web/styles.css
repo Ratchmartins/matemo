@@ -46,3 +46,36 @@
         rgb(189,194,194) 100%
     );
  }
+
+ @media (width <= 1000px) {
+    .top-section .right {
+        display: none;
+    }
+
+    .top-section .left {
+        text-align: center;
+    }
+
+    body {
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 72px;
+    }
+ }
+
+
+ :root {
+    --scroll: 0;
+ }
+
+ .top-section {
+   position: sticky;
+   top: 0;
+   /* (oldVal - oldMin) * newRange + newMin */
+   translate: 0 calc(-1% * (max(var(--scroll),
+   25) -25) * 100 / 75);
+   --background-opacity: calc(-1% * min(var(--scroll), 30)
+    * 100 / 30);
+ }
